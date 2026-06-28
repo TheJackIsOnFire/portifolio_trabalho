@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poiret+One&display=swap");
+.all-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url("../images/bg-1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 40.6em) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.home-section {
+  animation: opacityEffect 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 3s ease both;
+  color: #00cfff;
+  font-family: "Raleway", sans-serif;
+  margin-left: 10%;
+}
+@media (max-width: 40.6em) {
+  .home-section {
+    margin-left: 5%;
+  }
+}
+.home-name-1 {
+  font-size: 12rem;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  height: min-content;
+  margin-bottom: -6%;
+}
+@media (max-width: 75em) {
+  .home-name-1 {
+    font-size: 6rem;
+    margin-bottom: -5%;
+  }
+}
+@media (max-width: 56.25em) {
+  .home-name-1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 53.1em) {
+  .home-name-1 {
+    font-size: 5rem;
+    margin-bottom: -5%;
+  }
+}
+@media (max-width: 40.6em) {
+  .home-name-1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    margin-bottom: -4%;
+  }
+}
+@media (max-width: 23.75em) {
+  .home-name-1 {
+    font-size: 2.7rem;
+    letter-spacing: 0.8rem;
+    margin-bottom: -4%;
+  }
+}
+.home-name-2 {
+  font-size: 12rem;
+  letter-spacing: 8rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  height: min-content;
+  margin: 0;
+}
+@media (max-width: 75em) {
+  .home-name-2 {
+    font-size: 6rem;
+    letter-spacing: 6rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .home-name-2 {
+    font-size: 5rem;
+    letter-spacing: 5.4rem;
+  }
+}
+@media (max-width: 53.1em) {
+  .home-name-2 {
+    font-size: 5rem;
+    letter-spacing: 5.4rem;
+  }
+}
+@media (max-width: 40.6em) {
+  .home-name-2 {
+    font-size: 3rem;
+    letter-spacing: 3.4rem;
+  }
+}
+@media (max-width: 23.75em) {
+  .home-name-2 {
+    box-decoration-break: clone;
+    font-size: 2.7rem;
+    letter-spacing: 2.3rem;
+  }
+}
+.home-subtitle {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+.home-subtitle p {
+  font-weight: 400;
+}
+@media (max-width: 75em) {
+  .home-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 53.1em) {
+  .home-subtitle {
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 3%;
+  }
+}
+@media (max-width: 40.6em) {
+  .home-subtitle {
+    font-size: 1.2rem;
+    margin-top: 30%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 23.75em) {
+  .home-subtitle {
+    box-decoration-break: clone;
+    margin-top: 8%;
+    font-size: 1rem;
+    height: max-content;
+    margin-right: 5%;
+  }
+}
+.home-subtitle span {
+  margin: 0 2.4%;
+}
+@media (max-width: 53.1em) {
+  .home-subtitle span {
+    display: none;
+  }
+}
+
+@keyframes slideEffect {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideUpEffect {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes opacityEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

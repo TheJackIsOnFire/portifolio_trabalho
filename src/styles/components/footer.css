@@ -1,27 +1,25 @@
-@import "../main.scss";
-
 .footer {
   display: flex;
   align-items: center;
-  color: $color-blue;
+  color: #00cfff;
   font-size: 1.4rem;
   letter-spacing: 1px;
   padding: 0 0 2.5% 10%;
-
-  & p {
-    font-weight: 400;
-  }
-
-  @include respond(tab-land) {
+}
+.footer p {
+  font-weight: 400;
+}
+@media (max-width: 75em) {
+  .footer {
     font-size: 1.5rem;
     font-weight: 400;
   }
-
-  @include respond(phone) {
+}
+@media (max-width: 40.6em) {
+  .footer {
     display: none;
   }
-
-  &-text {
-    margin: 0 0 0 0.9%;
-  }
+}
+.footer-text {
+  margin: 0 0 0 0.9%;
 }

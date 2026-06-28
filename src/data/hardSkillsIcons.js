@@ -10,11 +10,6 @@ const hardSkillsIcons = [
     title: "JavaScript",
   },
   {
-    icon: "akar-icons:sass-fill",
-    className: "about-icon",
-    title: "Sass",
-  },
-  {
     icon: "fontisto:css3",
     className: "about-icon",
     title: "CSS",

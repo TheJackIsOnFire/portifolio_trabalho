@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
 
-import "../styles/pages/home.scss";
+import "../styles/pages/home.css";
 
 export default class Home extends Component {
   componentDidMount() {

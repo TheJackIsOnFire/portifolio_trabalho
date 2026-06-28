@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import Header from "../components/Header";
 import ListProjects from "./ListProjects";
 
-import "../styles/pages/projects.scss";
+import "../styles/pages/projects.css";
 
 export default class Projects extends Component {
   render() {
@@ -38,6 +38,15 @@ export default class Projects extends Component {
         </div>
 
         <div className="project">
+          <section className="project-intro">
+            <p>Portfólio</p>
+            <h1>Projetos desenvolvidos</h1>
+            <span>
+              Alguns trabalhos publicados com foco em front-end, React,
+              JavaScript, TypeScript, Redux e interfaces responsivas.
+            </span>
+          </section>
+
           <section className="project-thumbnail-section">
             <ListProjects />
           </section>

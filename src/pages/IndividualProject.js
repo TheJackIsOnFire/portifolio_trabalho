@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
-import "../styles/pages/projects.scss";
+import "../styles/pages/projects.css";
 import ReactTooltip from "react-tooltip";
 import disableScroll from "disable-scroll";
 
@@ -22,10 +22,11 @@ export default function IndividualProject(project) {
 
   return (
     <div className="project-individual-thumbnail">
-      <img className="project-img-individual" src={img} />
+      <img className="project-img-individual" src={img} alt={`Projeto ${name}`} />
       <p>{name}</p>
       <div className="project-video-icons">
         <button
+          type="button"
           data-tip="Saiba mais"
           onClick={showPopup}
           className="more-info-button project-btns"
@@ -64,7 +65,7 @@ export default function IndividualProject(project) {
           <div className="popup-text-container">
             <div className="popup-div-close">
               <button className="popup-Close" onClick={hidePopup}>
-                <i className="bi bi-x-circle popupClose"></i>
+                <Icon icon="bi:x-circle" className="popupClose" />
               </button>
             </div>
             <div className="popup-informative-text">

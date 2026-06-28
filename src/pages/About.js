@@ -7,7 +7,7 @@ import profile from "../assets/img/img_profile.jpg";
 import Header from "../components/Header";
 import SocialMedia from "../components/SocialMedia";
 
-import "../styles/pages/about.scss";
+import "../styles/pages/about.css";
 
 export default class About extends Component {
   componentDidMount() {
