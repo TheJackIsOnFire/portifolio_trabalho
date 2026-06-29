@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Alexsander Wallace com secoes de sobre mim, formacao, projetos e contato."
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Alexsander Wallace | Portfolio</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#formacao">Formacao</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio pessoal</p>
+          <h1>Alexsander Wallace</h1>
+          <p>
+            Desenvolvedor web em formacao, com base em Administracao e foco em
+            construir paginas organizadas, responsivas e orientadas ao usuario.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio">Ver projetos</a>
+            <a class="button button-secondary" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="sobre">
+        <div class="section-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Sobre Mim</p>
+            <h2>Perfil profissional</h2>
+            <p>
+              Sou bacharel em Administracao e estudante de desenvolvimento web.
+              Busco unir visao de negocio, organizacao e tecnologia para criar
+              solucoes digitais funcionais e bem estruturadas.
+            </p>
+            <p>
+              Tenho interesse em interfaces responsivas, logica de programacao,
+              versionamento com Git e boas praticas de construcao de paginas
+              para a web.
+            </p>
+            <p>
+              Minha experiencia em Administracao contribui com planejamento,
+              comunicacao, analise de problemas e foco em resultados.
+            </p>
+          </div>
+          <div class="profile-frame">
+            <img src="./assets/img/img_profile.jpg" alt="Foto de Alexsander Wallace" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section formation-section" id="formacao">
+        <div class="section-heading">
+          <p class="eyebrow">Formacao</p>
+          <h2>Formacao academica e desenvolvimento profissional</h2>
+          <p>
+            Minha trajetoria combina conhecimentos de gestao, estrategia e
+            desenvolvimento de paginas web.
+          </p>
+        </div>
+
+        <div class="formation-grid">
+          <article class="info-card">
+            <span>Graduacao</span>
+            <h3>Bacharelado em Administracao</h3>
+            <p>Universidade de Uberaba - UNIUBE</p>
+            <p>
+              Base em gestao de projetos, marketing, financas, comunicacao,
+              tomada de decisao e visao estrategica.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <span>Desenvolvimento Web</span>
+            <h3>Desenvolvimento Full Stack Python</h3>
+            <p>EBAC - Escola Britanica de Artes Criativas e Tecnologia</p>
+            <p>
+              Estudos voltados para HTML, CSS, JavaScript, Python, banco de
+              dados, logica de programacao e publicacao de projetos.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <span>Aprimoramento</span>
+            <h3>Paginas responsivas</h3>
+            <p>Projetos praticos publicados</p>
+            <p>
+              Construcao de interfaces adaptadas para diferentes telas,
+              organizacao de codigo e melhoria continua da experiencia do
+              usuario.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section portfolio-section" id="portfolio">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Projetos desenvolvidos</h2>
+          <p>
+            Selecao de projetos publicados durante minha formacao e pratica em
+            desenvolvimento web.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-list" aria-live="polite"></div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="contact-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos conversar?</h2>
+            <p>
+              Use o formulario para enviar uma mensagem. Ele abre seu aplicativo
+              de e-mail com os dados preenchidos.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:alexsanderonfire@gmail.com">alexsanderonfire@gmail.com</a>
+              <a href="https://www.linkedin.com/in/alexsander-wallace-on" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+              <a href="https://github.com/TheJackIsOnFire" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <label for="name">
+              Nome
+              <input id="name" name="name" type="text" placeholder="Seu nome" required />
+            </label>
+
+            <label for="email">
+              E-mail
+              <input id="email" name="email" type="email" placeholder="seu.email@exemplo.com" required />
+            </label>
+
+            <label for="subject">
+              Assunto
+              <input id="subject" name="subject" type="text" placeholder="Motivo do contato" />
+            </label>
+
+            <label for="message">
+              Mensagem
+              <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem" required></textarea>
+            </label>
+
+            <button class="button button-primary" type="submit">Enviar mensagem</button>
+            <p class="form-feedback" id="form-feedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" id="modal-close" aria-label="Fechar detalhes">
+          Fechar
+        </button>
+        <h2 id="modal-title"></h2>
+        <p class="modal-tech" id="modal-tech"></p>
+        <p id="modal-text"></p>
+        <div class="modal-actions">
+          <a class="button button-secondary" id="modal-code" href="#" target="_blank" rel="noopener noreferrer">
+            Repositorio
+          </a>
+          <a class="button button-primary" id="modal-page" href="#" target="_blank" rel="noopener noreferrer">
+            Ver aplicacao
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

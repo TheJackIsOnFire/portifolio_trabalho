@@ -1,45 +1,21 @@
-# Portfólio Alexsander Wallace
+# Portfolio Alexsander Wallace
 
-Site de portfólio desenvolvido em React para a Atividade Prática Web. A aplicação reúne as quatro seções solicitadas no modelo de entrega:
+Site estatico desenvolvido com HTML, CSS e JavaScript para a Atividade Pratica Web.
+
+## Estrutura
+
+- `index.html`: estrutura das secoes do site.
+- `styles.css`: estilos responsivos.
+- `script.js`: renderizacao dos projetos, modal e formulario de contato.
+- `assets/`: imagens usadas no site.
+
+## Secoes
 
 - Sobre Mim
-- Formação
-- Portfólio
-- Contato com formulário
+- Formacao
+- Portfolio
+- Contato com formulario
 
-## Links
+## Como abrir
 
-- Site publicado: https://thejackisonfire.github.io/portfolio_alex
-- Repositório: https://github.com/TheJackIsOnFire/portfolio_alex
-
-## Tecnologias
-
-- React
-- JavaScript
-- Sass
-- React Router
-- Iconify
-
-## Rotas principais
-
-- `#/about` - Sobre Mim
-- `#/formacao` - Formação
-- `#/portfolio` - Portfólio
-- `#/contato` - Contato
-
-As rotas antigas `#/formation`, `#/projects` e `#/contact` continuam funcionando por compatibilidade.
-
-## Como executar
-
-```bash
-npm install
-npm start
-```
-
-## Como publicar no GitHub Pages
-
-```bash
-npm run deploy
-```
-
-O projeto usa `HashRouter`, o que evita problemas de recarregamento de página no GitHub Pages.
+Abra o arquivo `index.html` diretamente no navegador ou publique o repositorio no GitHub Pages a partir da branch principal.
