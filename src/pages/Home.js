@@ -25,7 +25,7 @@ export default class Home extends Component {
               </p>
               <span>|</span>
               <p className="home-subtitle-2">
-                Estudante de Desenvolvimento Full Stack Python - EBAC
+                Desenvolvimento Full Stack Python - EBAC
               </p>
             </div>
           </section>
